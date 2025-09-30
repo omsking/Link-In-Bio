@@ -3,35 +3,39 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lora|Roboto:400,700" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
 
     <style>
     html {
       min-height: 100%;
       }
-    * {
-      border: thin red solid;
-      }
+    /* {border: thin red solid;}*/
+
     body {
       min-height: 100%;
       padding-top: 40px;
       padding-bottom: 40px;
       background: linear-gradient(90deg, #fae2ca, #e4cab1, #ceb399, #b89c82, #a3856b, #8e6f55, #7a5a40, #66462c);
-      color: rgba(250, 226, 202, 1.0);
+      color: rgba(255, 255, 255, 1.0);
+      font-family: 'Roboto', sans-serif; 
       }
     .avatar-image {
       width: 128px;
       height: 128px;
       object-fit: cover;
-      border: thick double green
+      border: thick double rgba(95,128,6,1.0)
       }
     .icons {
       width: 48px;
       height: 48px;
       border-radius: 48px;
       object-fit: cover;
+      border: 0.3rem solid white
       }
     a {
-      color: rgba(27, 16, 5, 1.0);
+      color: rgba(255, 255, 255, 1.0);
+      text-decoration: none
       }
     .link {
       background-color: rgba(179,179,152,0.5)
@@ -47,6 +51,9 @@
     .name-row {
       margin-bottom: 30px;
       text-align: center;
+      font-family: 'Lora', serif;
+      font-size: 24px;
+      font-weight: 600;
       }
     .social-icons-row {
       margin-bottom: 30px;
@@ -57,10 +64,17 @@
       margin-bottom: 20px;
       display: flex;
       align-items: center;
+      border-radius: 1000px;
+      padding: 5px;
+      padding-right: 48px;
+      box-shadow: 4px 4px 10px 0px rgba(102,70,44,0.8);
       }
     .link-text{
       text-align: center;
       flex-grow: 1;
+      }
+    .icon-format{
+      margin-right: 8px
       }
     </style>
   </head>
@@ -72,9 +86,12 @@
       </div>
       <div class="name-row">Olivia King</div>
       <div class="social-icons-row">
-        <a href="https://www.linkedin.com/in/oliviamsking/" target="_blank">LinkedIn</a>
-        <a href="https://olivia-king-portfolio.lovable.app/" target="_blank">Portfolio</a>
-        <a href="https://github.com/omsking" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/oliviamsking/" target="_blank">
+          <i class="fa-brands fa-linkedin icon-format"></i>LinkedIn</a>
+        <a href="https://olivia-king-portfolio.lovable.app/" target="_blank">
+          <i class="fa-solid fa-briefcase icon-format"></i>Portfolio</a>
+        <a href="https://github.com/omsking" target="_blank">
+          <i class="fa-brands fa-github icon-format"></i>GitHub</a>
         </div>
       <div class="links-row">
         <div class="link">
