@@ -6,14 +6,30 @@
     <style>
     * {
       border: thin red solid;
-    }
+      }
+    body {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      }
+    .avatar-image {
+      width: 128px;
+      height: 128px;
+      object-fit: cover;
+      border: thick double green
+      }
+    .icons {
+      width: 48px;
+      height: 48px;
+      border-radius: 48px;
+      object-fit: cover;
+      }
     </style>
   </head>
 
   <body>
     <div class="main-container">
       <div class="image-row">
-        <img src = "/Icons/profile-pic.jpg">
+        <img class="avatar-image" src="/Icons/profile-pic.jpg" alt="Road Moon Image">
       </div>
       <div class="name-row">Olivia King</div>
       <div class="social-icons-row">
@@ -23,16 +39,16 @@
         </div>
       <div class="links-row">
         <div class="link">
-          <img src="/Icons/cct-building-icon.jpg">
+          <img class="icons" src="/Icons/cct-building-icon.jpg">
           <a href="https://www.mastercard.com/us/en/news-and-trends/Insights/2024/how-long-term-partnership-helped-the-chicago-community-trust-harness-the-power-of-analytics.html" target="_blank">
             How long-term partnership helped The Chicago Community Trust harness the power of analytics</a>
           </div>
         <div class="link">
-          <img src="/Icons/ai-icon.jpg">
+          <img class="icons" src="/Icons/ai-icon.jpg">
           <a href="https://ai-2027.com/" target="_blank">AI 2027</a>
           </div>
         <div class="link">
-           <img src="/Icons/community-icon.jpg">
+           <img class="icons" src="/Icons/community-icon.jpg">
           <a href="https://time.com/7275113/annoyance-price-we-pay-for-community/" target="_blank">Is Annoyance the Price We Pay for Community?</a>
           </div>
       </div> <!-- links-row -->
