@@ -1,15 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html> 
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
+    html {
+      min-height: 100%;
+      }
     * {
       border: thin red solid;
       }
     body {
+      min-height: 100%;
       padding-top: 40px;
       padding-bottom: 40px;
+      background: linear-gradient(90deg, #fae2ca, #e4cab1, #ceb399, #b89c82, #a3856b, #8e6f55, #7a5a40, #66462c);
+      color: rgba(250, 226, 202, 1.0);
       }
     .avatar-image {
       width: 128px;
@@ -22,6 +29,38 @@
       height: 48px;
       border-radius: 48px;
       object-fit: cover;
+      }
+    a {
+      color: rgba(27, 16, 5, 1.0);
+      }
+    .link {
+      background-color: rgba(179,179,152,0.5)
+      }
+    .main-container {
+      max-width: 640px;
+      margin: auto;
+      }
+    .image-row {
+      margin-bottom: 20px;
+      text-align: center;
+      }
+    .name-row {
+      margin-bottom: 30px;
+      text-align: center;
+      }
+    .social-icons-row {
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: space-around;
+      }
+    .link {
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      }
+    .link-text{
+      text-align: center;
+      flex-grow: 1;
       }
     </style>
   </head>
@@ -40,16 +79,16 @@
       <div class="links-row">
         <div class="link">
           <img class="icons" src="/Icons/cct-building-icon.jpg">
-          <a href="https://www.mastercard.com/us/en/news-and-trends/Insights/2024/how-long-term-partnership-helped-the-chicago-community-trust-harness-the-power-of-analytics.html" target="_blank">
+          <a class="link-text" href="https://www.mastercard.com/us/en/news-and-trends/Insights/2024/how-long-term-partnership-helped-the-chicago-community-trust-harness-the-power-of-analytics.html" target="_blank">
             How long-term partnership helped The Chicago Community Trust harness the power of analytics</a>
           </div>
         <div class="link">
           <img class="icons" src="/Icons/ai-icon.jpg">
-          <a href="https://ai-2027.com/" target="_blank">AI 2027</a>
+          <a class="link-text" href="https://ai-2027.com/" target="_blank">AI 2027</a>
           </div>
         <div class="link">
            <img class="icons" src="/Icons/community-icon.jpg">
-          <a href="https://time.com/7275113/annoyance-price-we-pay-for-community/" target="_blank">Is Annoyance the Price We Pay for Community?</a>
+          <a class="link-text" href="https://time.com/7275113/annoyance-price-we-pay-for-community/" target="_blank">Is Annoyance the Price We Pay for Community?</a>
           </div>
       </div> <!-- links-row -->
       </div> <!-- main-container -->
